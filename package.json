@@ -9,8 +9,8 @@
     "build": "rollup -c"
   },
   "bin": {
-    "db": "./bin/cli.js",
-    "dev-boy": "./bin/cli.js"
+    "ct": "./bin/cli.js",
+    "cli-tool": "./bin/cli.js"
   },
   "main": "index.js",
   "keywords": [
