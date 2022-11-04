@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "test": "node lib/index.js -v"
+    "test": "rollup -w -c"
   },
   "bin": {
     "ct": "./bin/cli.js",

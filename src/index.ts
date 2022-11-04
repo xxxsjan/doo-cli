@@ -30,8 +30,9 @@ program
   .action(folderPrint);
 
 program
-  .command('http-header')
+  .command('http')
   .description('Get http header')
   .option('-u,--url <char>', 'http url', 'https://api.ipify.org')
+  .option('-h,--header', 'show header')
   .action(getHttpHeader);
 program.parse();
