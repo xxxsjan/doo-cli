@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import pkg from '../package.json';
 import tools from './modules/index';
 
-const { getIP, folderPrint, getSystemInfo, getTimeNode, npdel } = tools;
+const { getIP, folderPrint, getSystemInfo, getTimeNode, npdel, getHttpHeader } = tools;
 const { version, name } = pkg;
 
 const program = new Command(name);
@@ -28,4 +28,10 @@ program
   .option('-p, --print', 'Generate a markdown file')
   .description('Print directory structure')
   .action(folderPrint);
+
+program
+  .command('http-header')
+  .description('Get http header')
+  .option('-u,--url <char>', 'http url', 'https://api.ipify.org')
+  .action(getHttpHeader);
 program.parse();

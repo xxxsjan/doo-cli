@@ -4,9 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -w -c",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "node lib/index.js -v"
   },
   "bin": {
     "ct": "./bin/cli.js",
@@ -30,7 +30,8 @@
     "chalk": "^5.1.2",
     "commander": "^9.4.1",
     "del": "^7.0.0",
-    "inquirer": "^9.1.4"
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^5.0.1",

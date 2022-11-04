@@ -3,6 +3,7 @@ import folderPrint from './folder-print';
 import getSystemInfo from './get-system-info';
 import getTimeNode from './time-node';
 import npdel from './npdel';
+import getHttpHeader from './get-http-header';
 
 export default {
   getIP,
@@ -10,4 +11,5 @@ export default {
   getSystemInfo,
   getTimeNode,
   npdel,
+  getHttpHeader,
 };
