@@ -1,12 +1,12 @@
 {
-  "name": "@xxxsjan/cli-tool",
+  "name": "cli-tool",
   "version": "0.0.1",
   "description": "",
   "type": "module",
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "test": "rollup -w -c"
+    "version": "node ./lib/index.js -v"
   },
   "bin": {
     "ct": "./bin/cli.js",

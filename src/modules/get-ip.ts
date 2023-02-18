@@ -7,6 +7,7 @@ const IPV6: string = "https://api6.ipify.org";
 
 export default async function getIP(options) {
   const { useIPv6 = false, endpoint = "", intranet } = options;
+  console.log("options: ", options);
   if (intranet) {
     getIntranetIp();
   } else {

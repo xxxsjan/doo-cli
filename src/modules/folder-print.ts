@@ -105,6 +105,7 @@ export function printTree(dir = __dirname, spaceNum) {
 
 // 打印目录结构
 export default function folderPrint(options) {
+  console.log("options: ", options);
   const { depth, print } = options;
   depthNum = depth;
   isPrint = print;
