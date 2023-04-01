@@ -8,7 +8,7 @@ npm i cli-tool -g
 
 1 删除node_modules
 
-- ct npdel
+- ct npkill
 
 2 获取ip
 

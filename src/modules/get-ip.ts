@@ -6,11 +6,13 @@ const IPV4: string = "https://api.ipify.org";
 const IPV6: string = "https://api6.ipify.org";
 
 export default async function getIP(options) {
-  const { useIPv6 = false, endpoint = "", intranet } = options;
-  console.log("options: ", options);
-  if (intranet) {
+  const { useIPv6 = false, endpoint = "", ...args } = options;
+  if (args.intranet) {
     getIntranetIp();
+  } else if (args.extranet) {
+    getExternalIp();
   } else {
+    getIntranetIp();
     getExternalIp();
   }
 }
@@ -47,6 +49,6 @@ export async function getExternalIp(
     endpoint = useIPv6 ? IPV6 : IPV4;
   }
   const { data } = await axios.get(endpoint);
-  console.log(`\n 🌐 ip: ${chalk.green(data)} \n`);
+  console.log(`\n🌐 ip: ${chalk.green(data)} \n`);
   return data;
 }

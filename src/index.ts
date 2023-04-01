@@ -2,18 +2,20 @@ import { Command } from "commander";
 import pkg from "../package.json";
 import tools from "./modules/index";
 
-const { getIP, folderPrint, getSystemInfo, getTimeNode, npdel, getHttpHeader } =
+const { getIP, folderPrint, getSystemInfo, getTimeNode, npkill, getHttpHeader } =
   tools;
 const { version, name } = pkg;
 
 const program = new Command(name);
+
 // node .\lib\index.js -v
 program
   .alias("ct")
-  .description("A cli tool-set.")
+  .description("A cli tool")
   .version(version, "-v, --version, -V");
 
-program.command("npdel").description("remove node_modules dir").action(npdel);
+program.command("npkill").description("remove node_modules dir").action(npkill);
+
 // ct ip
 program
   .command("ip")
@@ -53,4 +55,5 @@ program
   .option("-u,--url <char>", "http url", "https://api.ipify.org")
   .option("-h,--header", "show header")
   .action(getHttpHeader);
+  
 program.parse();

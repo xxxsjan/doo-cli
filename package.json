@@ -13,12 +13,7 @@
     "cli-tool": "./bin/cli.js"
   },
   "main": "index.js",
-  "keywords": [
-    "cli",
-    "dev",
-    "terminal",
-    "file-tree"
-  ],
+  "keywords": [],
   "author": "xxxsjan",
   "license": "ISC",
   "homepage": "",

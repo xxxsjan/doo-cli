@@ -24,7 +24,6 @@ function printObj(obj, deep = 0) {
     }
   }
 }
-console.log(typeof printObj);
 const IPV4: string = 'https://api.ipify.org';
 export default async function getHttpHeader(options) {
   // console.log(options);

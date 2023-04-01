@@ -2,7 +2,7 @@ import getIP from './get-ip';
 import folderPrint from './folder-print';
 import getSystemInfo from './get-system-info';
 import getTimeNode from './time-node';
-import npdel from './npdel';
+import npkill from './npkill';
 import getHttpHeader from './get-http-header';
 
 export default {
@@ -10,6 +10,6 @@ export default {
   folderPrint,
   getSystemInfo,
   getTimeNode,
-  npdel,
+  npkill,
   getHttpHeader,
 };
