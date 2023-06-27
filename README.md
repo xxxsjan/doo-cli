@@ -8,23 +8,23 @@ npm i cli-tool -g
 
 1 删除node_modules
 
-- ct npkill
+- doo npkill
 
 2 获取ip
 
 - 默认获取外网
-ct ip
+doo ip
 - 获取内网
-ct ip -i
+doo ip -i
 
 3 获取时间信息
 
-- ct time
+- doo time
 
 4 获取系统信息
 
-- ct sys
+- doo sys
 
 5 获取目录结构
 
-- ct fp
+- doo fp

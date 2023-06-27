@@ -1,7 +1,7 @@
 {
-  "name": "cli-tool",
+  "name": "doo-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "好用的命令行工具集",
   "type": "module",
   "scripts": {
     "dev": "rollup -w -c",
@@ -9,8 +9,8 @@
     "version": "node ./lib/index.js -v"
   },
   "bin": {
-    "ct": "./bin/cli.js",
-    "cli-tool": "./bin/cli.js"
+    "doo": "./bin/cli.js",
+    "doo-cli": "./bin/cli.js"
   },
   "main": "index.js",
   "keywords": [],

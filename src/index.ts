@@ -10,13 +10,13 @@ const program = new Command(name);
 
 // node .\lib\index.js -v
 program
-  .alias("ct")
+  .alias("doo")
   .description("A cli tool")
   .version(version, "-v, --version, -V");
 
 program.command("npkill").description("remove node_modules dir").action(npkill);
 
-// ct ip
+// doo ip
 program
   .command("ip")
   .description("Get the local external network i p address")
@@ -24,14 +24,14 @@ program
   .option("-o,--extranet,--out", "Get ip for extranet")
   .action(getIP);
   
-//  ct system
+//  doo system
 program
   .command("system")
   .alias("sys")
   .description("Get system information ")
   .option("-v, --visual", "Rendering in a visual way")
   .action(getSystemInfo);
-// ct time
+// doo time
 program
   .command("time")
   .description("Get system information ")
