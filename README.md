@@ -6,25 +6,14 @@ npm i cli-tool -g
 
 ## 使用
 
-1 删除node_modules
 
-- doo npkill
 
-2 获取ip
+| 操作             | 命令       |
+| ---------------- | ---------- |
+| 删除node_modules | doo npkill |
+| 获取ip 默认外网  | doo ip     |
+| 获取ip 内网      | doo ip -i  |
+| 获取时间信息     | doo time   |
+| 获取系统信息     | doo sys    |
+| 获取目录结构     | doo fp     |
 
-- 默认获取外网
-doo ip
-- 获取内网
-doo ip -i
-
-3 获取时间信息
-
-- doo time
-
-4 获取系统信息
-
-- doo sys
-
-5 获取目录结构
-
-- doo fp
